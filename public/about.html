@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Battleship</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="./stylesheets/style.css" />
+    </head>
+
+    <body>
+        <header class="hero">
+            <h1>About </h1>
+        </header>
+        <main class="main">
+    
+          <p> Project: Battleship game</p> 
+            
+          This is a digital recreation of the classic Battleship game, where two players battle it out to sink all their opponent's 
+          ships first. Built with Javascript, HTML, and css.
+
+          <p>Technologies:</p>
+          <ul>
+                <li>
+                    <a href="https://nodejs.org/" target="_blank">Node</a> (<a
+                        href="https://github.com/nodejs/node/blob/master/LICENSE"
+                        target="_blank"
+                        >LICENSE</a
+                    >)
+                </li>
+                <li>
+                    <a href="https://expressjs.com/" target="_blank">Express</a>
+                    (<a
+                        href="https://github.com/expressjs/express/blob/master/LICENSE"
+                        target="_blank"
+                        >LICENSE</a
+                    >)
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/winstonjs/winston"
+                        target="_blank"
+                        >Winston</a
+                    >
+                    (<a
+                        href="https://github.com/winstonjs/winston/blob/master/LICENSE"
+                        target="_blank"
+                        >LICENSE</a
+                    >)
+                </li>
+                <li>
+                    <a href="https://github.com/websockets/ws" target="_blank"
+                        >ws</a
+                    >
+                    (<a
+                        href="https://github.com/websockets/ws/blob/master/LICENSE"
+                        target="_blank"
+                        >LICENSE</a
+                    >)
+                </li>
+                <li>
+                    <a href="https://redis.io/" target="_blank">Redis</a> (<a
+                        href="https://github.com/antirez/redis/blob/unstable/COPYING"
+                        target="_blank"
+                        >LICENSE</a
+                    >)
+                </li>
+                <li>
+                    <a href="http://redis.js.org/" target="_blank"
+                        >node_redis</a
+                    >
+                    (<a
+                        href="https://github.com/NodeRedis/node_redis/blob/master/LICENSE"
+                        target="_blank"
+                        >LICENSE</a
+                    >)
+                </li>
+            </ul>
+        </main>
+        <footer class="footer">
+            <p><a href="./index.html" id="loggedIn">Home</a></p>
+            <p>&lt;/&gt; with &hearts; by Mohit Saini</p>
+        </footer>
+        <script>
+            let loggedIn = document.getElementById("loggedIn");
+
+            if (sessionStorage.user) {
+                loggedIn.innerText = "Rooms";
+                loggedIn.href = "./rooms.html";
+            }
+        </script>
+    </body>
+</html>
